@@ -1,0 +1,518 @@
+:root {
+    /* COLORS */ 
+    --primary: gold;
+    --secondary: #393939;
+    --tertiary: #999999;
+    --neutral: #ffffdc;
+    --accent: #824943;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    background-color: var(--neutral);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#top-bar {
+    padding: 2em;
+    background-color: var(--tertiary);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#top-bar > a {
+    position: fixed;
+    top: 1%;
+    left: 1%
+}
+
+#brand-logo {
+    height: clamp(3em, 5vw, 5em);
+    max-width: 100%;
+    position: fixed;
+}
+
+#brand-logo:hover {
+    cursor: pointer;
+}
+
+.nav-buttons {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    font-size: clamp(0.8rem, 2vw, 1.5rem);
+    gap: clamp(2em, 6vw, 5em);
+    font-weight: bold;
+}
+
+.nav-buttons a {
+    color: var(--secondary);
+}
+
+.nav-buttons a:hover {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.nav-buttons a:visited {
+    color: var(--secondary);
+}
+
+#home {
+    display: flex;
+    padding: 4em;
+    justify-content: center;
+    gap: 1em;
+}
+
+#home p {
+    background-color: #dddddd;
+    padding: 3em;
+    font-family: "Serif";
+    width: 50%;
+    font-size: clamp(0.5rem, 2vw, 2rem);
+}
+
+#home p button {
+    display: block;
+    color: var(--secondary);
+    font-weight: bold;
+    font-size: 60%;
+    width: 40%;
+    text-align: center;
+    margin: 1em 2em -1em 0;
+    padding: 1em 0.5em;
+    background-color: var(--primary);
+    text-decoration: none;
+    border: none;
+    position: relative;
+    top: 2em;
+}
+
+#home-img {
+    width: clamp(0.5rem, 36vw, 30rem);
+    height: clamp(0.5rem, 36vw, 30rem);
+}
+
+#home p button:hover {
+    cursor: pointer;
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+#home p a, #about a{
+    text-decoration: none;
+}
+
+#home p button a:visited {
+    color: var(--secondary);
+}
+
+#about {
+    background-color: var(--secondary);
+    margin: 5em auto;
+    width: 100%;
+    padding: 3em 2em;
+}
+
+#about > h2 {
+    font-size: clamp(3rem, 4vw, 22rem);
+    margin: 1em auto;
+    color: var(--primary);
+    text-align: center;
+}
+
+#about > p {
+    font-size: clamp(1rem, 1.5vw, 18rem);
+    color: #dddddd;
+    margin: 2em auto;
+    width: 70%;
+    text-align: left;
+}
+
+.about-stats {
+    display: flex;
+    justify-content: center;
+    gap: 8em;
+}
+
+.about-stats > div {
+    color: var(--primary);
+    border: 3px solid var(--primary);
+    width: 15%;
+    text-align: center;
+    margin: 2em 0 3em;
+    border-radius: 5%;
+}
+
+.stat-name {
+    background-color: var(--primary);
+    color: black;
+    padding: 5px;
+    font-size: 100%;
+}
+
+.stat-value {
+    font-weight: bold;
+    margin: 10px auto;
+    font-size: clamp(1.2rem, 1.6vw, 1.4rem);
+}
+
+.stat-desc {
+    color: white;
+    font-style: italic;
+    margin: 10px auto;
+    width: 80%;
+    font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+}
+
+#about button {
+    display: block;
+    color: var(--secondary);
+    font-weight: bold;
+    font-size: clamp(0.9rem, 1.4vw, 1.6rem);
+    width: 30%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+#about button:hover {
+    cursor: pointer;
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+#store {
+    background-color: var(--primary);
+    margin-top: 10em;
+    padding: 3em 5em;
+    color: white;
+}
+
+#store > h2 {
+    font-size: 250%;
+    text-align: center;
+    margin-bottom: 2em;
+    color: black;
+}
+
+#catalog {
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    flex-wrap: wrap;
+}
+
+#catalog > div {
+    background-color: var(--secondary);
+    height: 300px;
+    width: 225px;
+    overflow-y: hidden;
+    border-radius: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.shoe-img {
+    height: 60%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.shoe-name, .shoe-price {
+    text-align: center;
+    font-weight: bold;
+}
+
+.shoe-name {
+    font-size: clamp(1rem, 1.4vw, 2.6rem);
+}
+
+.shoe-price {
+    font-size: clamp(1rem, 1.5vw, 2.5rem);
+}
+
+.shoe-purchase {
+    background-color: #dddddd;
+    color: var(--secondary);
+    width: 100%;
+    font-size: clamp(1.5rem, 2vw, 3.2rem);
+    border: none;
+    font-family: Impact;
+    text-align: center;
+}
+
+.shoe-purchase:hover {
+    cursor: pointer;
+    background-color: var(--neutral);
+    padding: 0;
+}
+
+#contact {
+    margin-top: 8em;
+    background-color: #dddddd;
+    text-align: center;
+    padding: 3em;
+    font-size: 150%;
+}
+
+#contact h2 {
+    margin-bottom: 2em;
+}
+
+#contact p {
+    margin-bottom: 1em;
+}
+
+.signup-form {
+    background-color: var(--secondary);
+    padding: 1em 6% 2em;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signup-form label, .signup-form input {
+    text-align: left;
+    display: block;
+}
+
+.signup-form label {
+    font-size: clamp(1rem, 1.8vw, 1.5rem);
+    color: var(--primary);
+    margin-top: 1em;
+    margin-right: auto;
+}
+
+.form-input {
+    font-size: clamp(1.2rem, 2vw, 1.6rem);
+    width: clamp(15rem, 50vw, 28rem);
+}
+
+#form-submit {
+    font-size: 100%;
+    width: 100%;
+}
+
+#consent-checkbox, #terms-and-conditions-checkbox {
+    display: inline;
+    width: 1em;
+}
+
+#consent {
+    margin-top: 2em;
+    margin-bottom: -1em;
+}
+
+#terms-and-conditions, #consent {
+    display: block;
+    font-size: clamp(0.8rem, 1.1vw, 1.6rem);
+}
+
+.signup-form input[type=submit] {
+    text-align: center;
+    margin-top: 2em;
+    background-color: var(--primary);
+    border: 2px solid var(--primary);
+    font-weight: bold;
+}
+
+.signup-form input[type=submit]:hover {
+    cursor: pointer;
+    color: var(--primary);
+    background-color: black;
+}
+
+#feedback-title, #socials-title {
+    margin-top: 2em;
+}
+
+textarea {
+    font-size: clamp(1.2rem, 2vw, 1.6rem);
+    margin: 0 auto;
+    border: 5px solid var(--secondary);
+    width: 60%;
+}
+
+#feedback input {
+    display: block;
+    font-size: clamp(1.2rem, 2vw, 1.6rem);
+    background-color: black;
+    color: var(--primary);
+    border: none;
+    padding: 0.5em 1em;
+    margin-left: 72%;
+    border: 4px solid black;
+    border-radius: 5px;
+}
+
+#feedback input:hover {
+    background-color: var(--primary);
+    color: black;
+    cursor: pointer;
+}
+
+#socials li {
+    list-style-type: none;
+    font-size: 80%;
+    font-family: monospace;
+    margin-bottom: 1em;
+}
+
+#socials li a {
+    color: blue;
+}
+
+#socials li a:visited {
+    color: blue;
+}
+
+footer {
+    padding: 1em 0;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 100%;
+}
+
+/* @media (max-width: 798px) {
+    .nav-buttons {
+        display: none;
+    }
+    #brand-logo {
+        margin: 0 auto;
+    }
+    #home {
+        height: 100vh;
+        flex-direction: column;
+    }
+    #home p {
+        width: 100%;
+        padding: 2em;
+        display: block;
+        height: fit-content;
+        overflow-y: hidden;
+    }
+    .signup-form label, .signup-form input{
+    font-size: 50%;
+    }
+    #terms-and-conditions, #consent {
+    font-size: 30%;
+    }
+    .signup-form {
+        padding: 1em 0 2em 2em;
+        width: 70%;
+    }
+    textarea {
+        width: 100%;
+    }
+    footer p {
+        font-size: 75%;
+    }
+    .about-stats div {
+        width: 30%;
+    }
+     .stat-name {
+        font-size: 80%;
+    }
+    .stat-value {
+        font-size: 110%;
+    }
+    .stat-desc {
+        font-size: 90%;
+    }
+    #about button {
+        font-size: 75%;
+    }
+    #about p {
+        font-size: 80%;
+        width: 90%;
+    }
+    #catalog {
+        gap: 2.5em;
+    }
+    #store {
+        padding: 1.25em;
+    }
+} */
+
+@media (max-width: 870px) {
+    #brand-logo {
+        position: relative;
+    }
+    .nav-buttons {
+        display: none;
+    }
+    #top-bar {
+        padding: 1em;
+    }
+
+    #home {
+        padding: 3em;
+    }
+    #home p {
+        padding: 2em;
+    }
+
+    #catalog > div {
+        height: 195px;
+        width: 145px;
+    }
+
+    .signup-form {
+        width: 65%
+    }
+}
+
+@media (max-width: 1180px) {
+    #top-bar {
+        height: 4em;
+    }
+
+    #home p button {
+        font-size: 90%;
+    }
+
+    .about-stats {
+        flex-direction: column;
+        gap: 2em;
+        margin: 3em 0;
+    }
+    .about-stats div {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .signup-form {
+        width: 90%
+    }
+    #feedback input {
+    margin-left: 79.5%;
+    }
+
+    textarea {
+        width: 80%;
+    }
+}

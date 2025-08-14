@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nova Steps</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <header id="top-bar">
+      <a href="#top-bar"><img src="images/brand-logo.png" alt="Nova Steps Brand Logo" id="brand-logo"></a>
+      <div class="nav-buttons">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#store">STORE</a>
+        <a href="#contact">CONTACT</a>
+      </div>
+    </header>
+    <section id="home">
+      <p><b>Nova Steps</b> is a modern footwear and lifestyle brand redefining everyday style with bold design and comfort. From sleek sneakers to statement essentials, Nova Steps delivers quality-driven products for those who move differently.<a href="#store"><button>Shop >></button></a></p>
+      <img src="images/hero-page-img.png" id="home-img" alt="Shoe Store Image">
+    </section>
+    <section id="about">
+      <h2>WHO ARE WE?</h2>
+      <p>
+        <b>Nova Steps</b> is a forward-thinking footwear and lifestyle brand built for those who move with purpose. Founded in 2018, we've grown from a small online boutique into a global community of over <b>1 million customers</b> across <b>35 countries</b> - all united by a love for bold style, everyday comfort and next-gen design.<br>
+        With over <b>250 unique designs</b> released since launch and a <b>94% customer satisfaction rate</b>, we're commited not just to setting trends - but to building lasting trust. Every product is crafted with sustainability in mind, using ehtically sourced materials and low-impact packaging.<br>
+        Join thousands who've already taken the next step with us - because at Nova steps, <b>the future moves with you</b>.
+      </p>
+      <div class="about-stats">
+        <div id=stat-1>
+          <h3 class="stat-name">Pairs Sold</h3>
+          <p class="stat-value">Over 1.2 Million</p>
+          <p class="stat-desc">Trusted by a global community of customers in 35 countries, Nova Steps has shipped over 1.2 million pairs since launch - and counting.</p>
+        </div>
+        <div id="stat-2">
+          <h3 class="stat-name">Happy Customers</h3>
+          <p class="stat-value">94% Customer Satisfaction</p>
+          <p class="stat-desc">From comfort to durability, 94% of our customers report high satisfaction across our core product lines.</p>
+        </div>
+        <div id="stat-3">
+          <h3 class="stat-name">Eco-friendly</h3>
+          <p class="stat-value">80% Sustainable Material Used</p>
+          <p class="stat-desc">With sustainability at our core, over 80% of our current lineup is made using recycled or ethically sourced materials.</p>
+        </div>
+      </div>
+      <a href="#contact"><button>CONTACT US >></button></a>
+    </section>
+    <section id="store">
+      <h2>Our Collection</h2>
+      <div id="catalog">
+        <div id="shoe-1">
+          <img src="images/shoe1.png" class="shoe-img" alt="Shoe preview">
+          <p class="shoe-name">Stargazer</p>
+          <p class="shoe-price">$99</p>
+          <button class="shoe-purchase">BUY NOW</button>
+        </div>
+        <div id="shoe-2">
+          <img src="images/shoe2.png" class="shoe-img" alt="Shoe preview">
+          <p class="shoe-name">Solar 2021</p>
+          <p class="shoe-price">$299</p>
+          <button class="shoe-purchase">BUY NOW</button>
+        </div>
+        <div id="shoe-3">
+          <img src="images/shoe3.png" class="shoe-img" alt="Shoe preview">
+          <p class="shoe-name">Apex V2</p>
+          <p class="shoe-price">$149</p>
+          <button class="shoe-purchase">BUY NOW</button>
+        </div>
+        <div id="shoe-4">
+          <img src="images/shoe4.png" class="shoe-img" alt="Shoe preview">
+          <p class="shoe-name">Quill 2019</p>
+          <p class="shoe-price">$229</p>
+          <button class="shoe-purchase">BUY NOW</button>
+        </div>
+        <div id="shoe-5">
+          <img src="images/shoe5.png" class="shoe-img" alt="Shoe preview">
+          <p class="shoe-name">Aura AZ</p>
+          <p class="shoe-price">$139</p>
+          <button class="shoe-purchase">BUY NOW</button>
+        </div>
+        <div id="shoe-6">
+          <img src="images/shoe6.png" class="shoe-img" alt="Shoe preview">
+          <p class="shoe-name">Ligero</p>
+          <p class="shoe-price">$219</p>
+          <button class="shoe-purchase">BUY NOW</button>
+        </div>
+        <div id="shoe-7">
+          <img src="images/shoe7.png" class="shoe-img" alt="Shoe preview">
+          <p class="shoe-name">Mercury X</p>
+          <p class="shoe-price">$199</p>
+          <button class="shoe-purchase">BUY NOW</button>
+        </div>
+        <div id="shoe-8">
+          <img src="images/shoe8.png" class="shoe-img" alt="Shoe preview">
+          <p class="shoe-name">Phantom</p>
+          <p class="shoe-price">$169</p>
+          <button class="shoe-purchase">BUY NOW</button>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Talk To Us</h2>
+      <div id="sign-up">
+        <p><b>Sign up</b> to get exclusive <b>premium</b> offers!</p>
+      <form class="signup-form">
+        <label for="first-name">
+          Enter Your First Name:
+          <input class="form-input" id="first-name" type="text" name="first-name" required>
+        </label>
+        <label for="last-name">
+          Enter Your Last Name:
+          <input class="form-input" id="last-name" type="text" name="last-name" required>
+        </label>
+        <label for="email">
+          Enter Your Email:
+          <input class="form-input" id="email" type="email" name="email" required>
+        </label>
+        <label for="age">
+          Enter Your Age (optional):
+          <input class="form-input" id="age" type="number" name="age" min="13" max="120" required>
+        </label>
+        <label id="consent">
+          <input type="checkbox" name="consent" id="consent-checkbox" required> 
+          I want to recieve promotional offers and discounts via email.
+        </label>
+        <br>
+        <label id="terms-and-conditions">
+          <input type="checkbox" name="terms-and-conditions" id="terms-and-conditions-checkbox" required> 
+          I have read and I accept the terms and conditions.
+        </label>
+        <input id="form-submit" type="submit" value="Submit">
+      </form>
+      </div>
+      <div id="feedback">
+        <p id="feedback-title">Any <b>feedback</b> or comments?</p>
+        <form class="feedback-form">
+          <textarea placeholder="Let us know your thoughts..." required></textarea>
+          <input type="submit" value="Send">
+        </form>
+      </div>  
+      <div id="socials">
+        <p id="socials-title"><b>Follow</b> us online!</p>
+        <ul>
+          <li><b>Instagram:</b> <a href="https://www.instagram.com" target="_blank">@novastoresig</a></li>
+          <li><b>X (Twitter):</b> <a href="https://www.x.com" target="_blank">@novastoresx</a></li>
+          <li><b>TikTok:</b> <a href="https://www.tiktok.com" target="_blank">@novastorestiktok</a></li>
+          <li><b>Facebook:</b> <a href="https://www.facebook.com" target="_blank">@novastoresfb</a></li>
+          <li><b>YouTube:</b> <a href="https://www.youtube.com" target="_blank">@novastoresyt</a></li>
+        </ul>
+      </div>
+    </section>
+    <footer>
+      <p>Copyright © 2025 Nova Stores</p>
+      <p><a href="">Terms of Use</a><b> | </b><a href="">Privacy Policy</a></p>
+    </footer>
+  </body>
+</html>
